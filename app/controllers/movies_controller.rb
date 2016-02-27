@@ -28,7 +28,7 @@ class MoviesController < ApplicationController
     @all_ratings = Movie.ratings
     @checked = {"ratings_G" => "1", "ratings_PG" => "1", "ratings_PG-13" => "1", "ratings_R" => "1", "ratings_NC-17" => "1"}
 
-    if params[:commit]=="Refresh"
+    # if params[:commit]=="Refresh"
       if params.has_key?(:ratings)
         @checked = params[:ratings]
       elsif session.has_key?(:ratings)
@@ -38,7 +38,9 @@ class MoviesController < ApplicationController
         @checked = {}
         @movies = []
       end
-    end
+    # end
+
+    session[:ratings] = @checked
 
     @movies = @movies.select do |m| 
       @rattemp = "ratings_" + m[:rating]
