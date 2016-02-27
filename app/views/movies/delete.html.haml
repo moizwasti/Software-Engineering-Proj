@@ -1,0 +1,13 @@
+%h1 Delete Movie
+
+= form_tag movies_deleter_path, :method => :delete do
+
+  = label :movie, :title, 'Delete By Name'
+  = text_field :movie1, 'title'
+
+  = submit_tag 'Delete'
+
+  = label :movie, :rating, 'Delete By Rating'
+  = select :movie2, :rating, ['G','PG','PG-13','R','NC-17']
+
+  = submit_tag 'Delete'
