@@ -11,7 +11,6 @@ class MoviesController < ApplicationController
   end
 
   def index
-    
     @sort_by = nil
     redirecter = false
     
@@ -24,7 +23,7 @@ class MoviesController < ApplicationController
     
     @movies = Movie.order(@sort_by)
     session[:sort_by] = @sort_by
-      
+
     @all_ratings = Movie.ratings
     @checked = {"ratings_G" => "1", "ratings_PG" => "1", "ratings_PG-13" => "1", "ratings_R" => "1", "ratings_NC-17" => "1"}
 
