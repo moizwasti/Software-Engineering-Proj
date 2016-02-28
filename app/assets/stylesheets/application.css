@@ -11,7 +11,7 @@ html, body {
 }
 div#main {
   margin: 0;
-  /*padding: 0 20px 20px;*/
+  padding: 0 20px 20px;
 }
 a {
   background: transparent;
@@ -35,17 +35,17 @@ h1.title {
   border-bottom: 8px solid white;
   font: bold 12px/30px Bebas Neue, sans-serif;
   font-size: 2em;
-  /*font-style: normal;*/
+  font-style: normal;
   text-align: center;
 }
 table#movies {
-  /*margin: 10px;*/
+  margin: 10px;
   border-collapse: collapse;
   width: 100%;
   border-bottom: 2px solid black;
 }
 table#movies th {
-  /*border: 2px solid white;*/
+  border: 2px solid white;
   font-weight: bold;
   background-color: #333366;
 }
