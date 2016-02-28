@@ -1,14 +1,17 @@
 html, body {
   margin: 0;
   padding: 0;
-  background: White;
-  color: DarkSlateGrey;
+  background: #000033;
+  background-image: url("http://185.26.182.219/Rqae5eb53b-c103-49e4-a363-9cb05f81161d/ID2906DA6D6FBE26CB/RV200000/AVSkyController_3.2.6.55402/Br200/CL2-ea/DL0/DT0/EI464477729/Ht240/IP139.190.43.135%3a53645/IQ50/MO15/MT0/NIlhr-cont-02.wi-tribe.net.pk/OC0/OS0/Otjpeg/PB200/PNMedCongestion_4GWiFi_Desktop/SI139.190.43.135%3a53645-70.32.82.191%3a80/SUhttp%3a%2f%2fwww.pptgrounds.com%2fwp-content%2fuploads%2f2012%2f08%2fBlue-movie-film-strip-backgrounds.jpg/Sd6C61686F7265/TI464477729/Tr1/Wh400/EVb605fca97c1e3c4147bfe0c342914bc3/file.jpeg");
+  background-size: 100% auto;
+  color: white;
   font-family: Tahoma, Verdana, sans-serif;
   font-size: 10pt;
+  text-align: center;
 }
 div#main {
   margin: 0;
-  padding: 0 20px 20px;
+  /*padding: 0 20px 20px;*/
 }
 a {
   background: transparent;
@@ -17,9 +20,9 @@ a {
   font-weight: bold;
 }
 h1 {
-  color: maroon;
+  color: white;
   font-size: 150%;
-  font-style: italic;
+  font-style: normal;
   display: block;
   width: 100%;
   border-bottom: 1px solid DarkSlateGrey;
@@ -27,26 +30,28 @@ h1 {
 h1.title {
   margin: 0 0 1em;
   padding: 10px;
-  background-color: orange;
+  background-color: #333366;
   color: white;
-  border-bottom: 4px solid gold;
+  border-bottom: 8px solid white;
+  font: bold 12px/30px Bebas Neue, sans-serif;
   font-size: 2em;
-  font-style: normal;
+  /*font-style: normal;*/
+  text-align: center;
 }
 table#movies {
-  margin: 10px;
+  /*margin: 10px;*/
   border-collapse: collapse;
   width: 100%;
   border-bottom: 2px solid black;
 }
 table#movies th {
-  border: 2px solid white;
+  /*border: 2px solid white;*/
   font-weight: bold;
-  background-color: wheat;
+  background-color: #333366;
 }
 table#movies th, table#movies td {
-  padding: 4px;
-  text-align: left;
+  padding: 8px;
+  text-align: center;
 }
 #notice #warning {
   background: rosybrown;
@@ -57,5 +62,5 @@ form label {
   display: block;
   line-height: 25px;
   font-weight: bold;
-  color: maroon;
+  color: white;
 }
