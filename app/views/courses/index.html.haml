@@ -1,0 +1,16 @@
+-#  This file is app/views/courses/index.html.haml
+%h3 All Courses
+%table#movies
+  %thead
+    %tr
+      %th= link_to "Course Title", :sort_by => "title"
+      %th Rating
+      %th= link_to "Release Date", :sort_by => "release_date"
+      %th More Info
+  %tbody
+    - @course.each do |course|
+      %tr
+        %td= course.title 
+        %td= course.rating
+        %td= course.instructor
+        %td= link_to "More about #{course.title}", course_path(course)

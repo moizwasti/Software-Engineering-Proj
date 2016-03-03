@@ -1,43 +1,151 @@
-html, body {
+html {
   margin: 0;
   padding: 0;
-  background: #000033;
-  background-image: url("http://185.26.182.219/Rqae5eb53b-c103-49e4-a363-9cb05f81161d/ID2906DA6D6FBE26CB/RV200000/AVSkyController_3.2.6.55402/Br200/CL2-ea/DL0/DT0/EI464477729/Ht240/IP139.190.43.135%3a53645/IQ50/MO15/MT0/NIlhr-cont-02.wi-tribe.net.pk/OC0/OS0/Otjpeg/PB200/PNMedCongestion_4GWiFi_Desktop/SI139.190.43.135%3a53645-70.32.82.191%3a80/SUhttp%3a%2f%2fwww.pptgrounds.com%2fwp-content%2fuploads%2f2012%2f08%2fBlue-movie-film-strip-backgrounds.jpg/Sd6C61686F7265/TI464477729/Tr1/Wh400/EVb605fca97c1e3c4147bfe0c342914bc3/file.jpeg");
-  background-size: 100% auto;
+  /*background: white;*/
   color: white;
   font-family: Tahoma, Verdana, sans-serif;
   font-size: 10pt;
   text-align: center;
+  z-index:-1;
 }
+
+body {
+  margin: 0;
+  padding: 0;
+  background: white;
+  color: white;
+  font-family: Tahoma, Verdana, sans-serif;
+  font-size: 10pt;
+  text-align: center;
+  background-image: url("https://yalantis.com/media/content/ckeditor/2014/11/Katy-2.jpg");
+  background-size: 100% auto;
+}
+
 div#main {
   margin: 0;
   padding: 0 20px 20px;
 }
+
 a {
-  background: transparent;
-  color: maroon;
-  text-decoration: underline;
-  font-weight: bold;
+  /*background: transparent;*/
+  color: white;
 }
+
+b {
+  /*background: transparent;*/
+  color: white;
+  font: bold 12px/30px Bebas Neue, sans-serif;
+  font-size: 150%;
+  text-decoration: none
+}
+
+
 h1 {
   color: white;
   font-size: 150%;
   font-style: normal;
   display: block;
-  width: 100%;
-  border-bottom: 1px solid DarkSlateGrey;
+  /*width: 100%;*/
+  /*border-bottom: 1px solid DarkSlateGrey;*/
 }
-h1.title {
-  margin: 0 0 1em;
-  padding: 10px;
-  background-color: #333366;
+.title {
+  /*margin: 0 0 1em;*/
+  /*padding: 10px;*/
+  background-color: white;
   color: white;
-  border-bottom: 8px solid white;
+  /*border-bottom: 8px solid white;*/
   font: bold 12px/30px Bebas Neue, sans-serif;
-  font-size: 2em;
-  font-style: normal;
+  /*font-size: 2em;*/
+  /*font-style: normal;*/
   text-align: center;
 }
+.image:before {
+  background-color: white; 
+  content: url('http://nearpeer.org/wp-content/uploads/2016/02/Logo-Huge.png');
+  display: block;
+  position: absolute;
+  /*width: 100%;*/
+  /*height: 50px;*/
+  top: 0px;
+  /*left: -1350px;*/
+  padding: 15px 8px;
+  z-index:1;
+}
+
+/*div {*/
+/*    width: 300px;*/
+/*    padding: 25px;*/
+/*    border: 25px solid navy;*/
+/*    margin: 25px;*/
+/*}*/
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 20px 20px;
+    overflow: hidden;
+    background-color: white;
+    width: 81.6%;
+    position: absolute;
+    top: 0px;
+    left: 210px;
+    /*z-index: -1;*/
+}
+
+li {
+    float: left;
+}
+
+li a {
+    display: block;
+    color: black;
+    text-align: center;
+    font-size: 20px;
+    padding: 10px 30px;
+    text-decoration: none;
+    border-left: 1px solid #bbb;
+}
+
+li a:hover {
+    background-color: #0080ff;
+}
+
+.button {
+  background-color: #0080ff; 
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 26px;
+  -webkit-transition-duration: 0.4s; /* Safari */
+  transition-duration: 0.4s;
+  position: absolute;
+  top: 380px;
+  left: 580px;
+}
+.button:hover {
+  /*background-color: #1b3690;*/
+  box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+}
+
+.button2 {
+  background-color: #0080ff; 
+  border: none;
+  color: white;
+  padding: 50px 50px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 35px;
+  -webkit-transition-duration: 0.4s; /* Safari */
+  transition-duration: 0.4s;
+}
+.button2:hover {
+  box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+}
+
 table#movies {
   margin: 10px;
   border-collapse: collapse;

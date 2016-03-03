@@ -1,13 +1,19 @@
 !!!
 %html
   %head
-    %title Rotten Potatoes!
+    %title NearPeer.org
     = stylesheet_link_tag 'application', 'media' => 'all', 'data-turbolinks-track' => true
     = javascript_include_tag 'application', 'data-turbolinks-track' => true
     = csrf_meta_tags
 
   %body
-    %h1.title Rotten Potatoes!
+    %h1=link_to '', root_path, class: "image", style: "text-decoration: none"
+    %ul
+      %li=link_to 'Home', root_path
+      %li=link_to 'Courses', courses_path
+      %u1{:style => "float:right; list-style-type:none"}
+        %li=link_to 'ContactUs', courses_path
+
     #main
       - if flash[:notice]
         #notice.message= flash[:notice]
