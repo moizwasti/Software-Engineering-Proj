@@ -1,16 +1,15 @@
 -#  This file is app/views/courses/index.html.haml
-%h3 All Courses
-%table#movies
-  %thead
-    %tr
-      %th= link_to "Course Title", :sort_by => "title"
-      %th Rating
-      %th= link_to "Release Date", :sort_by => "release_date"
-      %th More Info
+%body{:style => "background-image: url('http://www.qsdigitalsolutions.com/wp-content/uploads/2015/07/student-subject-choices-stem-drift-bobbed.jpg'); background-size: 100% auto"}
+  %h3 All Courses
   %tbody
     - @course.each do |course|
       %tr
-        %td= course.title 
-        %td= course.rating
-        %td= course.instructor
-        %td= link_to "More about #{course.title}", course_path(course)
+        %b= link_to "#{course.title}", courses_path, class: "button2", style: "position: relative; top: 85px; left: 20px"
+
+  // %table#movies
+  //   %thead
+  //     %tr
+  //       %th= link_to "Course Title", :sort_by => "title"
+  //       %th Rating
+  //       %th= link_to "Instructor", :sort_by => "release_date"
+  //       %th More Info
