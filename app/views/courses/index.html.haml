@@ -1,15 +1,7 @@
 -#  This file is app/views/courses/index.html.haml
 %body{:style => "background-image: url('http://www.qsdigitalsolutions.com/wp-content/uploads/2015/07/student-subject-choices-stem-drift-bobbed.jpg'); background-size: 100% auto"}
-  %h3 All Courses
-  %tbody
+  %h3{:style => "font-size: 200%"} All Courses
+  %ul2
     - @course.each do |course|
       %tr
-        %b= link_to "#{course.title}", courses_path, class: "button2", style: "position: relative; top: 85px; left: 20px"
-
-  // %table#movies
-  //   %thead
-  //     %tr
-  //       %th= link_to "Course Title", :sort_by => "title"
-  //       %th Rating
-  //       %th= link_to "Instructor", :sort_by => "release_date"
-  //       %th More Info
+        %li2= link_to "#{course.title}", course_path(course)

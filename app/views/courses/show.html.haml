@@ -1,19 +1,24 @@
 -# in app/views/courses/show.html.haml
 
-%h2 Details about #{@course.title}
-
-%ul#details
-  %li
-    Rating:
-    = @course.rating
-  %li
-    Instructor:
-    = @course.instructor
-
-%h3 Description:
-
-%p#description= @course.description
-
-= link_to 'Edit', edit_course_path(@course)
-= button_to 'Delete', course_path(@course), :method => :delete, :confirm => 'Are you sure?'
-= link_to 'Back to course list', courses_path
+%body{:style => "background-image: url('http://eskipaper.com/images/minimalist-wallpaper-23.jpg'); background-size: 100% auto; position: fixed; right: 0px; left: 0px;"}
+  %h3 Details about: #{@course.title}
+  %ul2
+    - @allcourses.each do |course|
+      - if (@course == course)
+        %li2= link_to "#{course.title}", course_path(course), class: "active"
+      - else
+        %li2= link_to "#{course.title}", course_path(course)
+  %table
+    %tr
+      %th Rating:
+      %td= @course.rating
+    %tr
+      %th Instructor:
+      %td= @course.instructor
+    %tr
+      %th Description:
+      %td#description= @course.description
+    
+    = link_to 'Edit', edit_course_path(@course), :style => "position: absolute; top: 500px; left: 500px; font-size: 150%", :class => 'button3'
+    = link_to 'Delete', course_path(@course), :method => :delete, :confirm => 'Are you sure?', :style => "position: absolute; top: 500px; left: 590px; font-size: 150%", :class => 'button3'
+    = link_to 'Back to course list', courses_path, :style => "position: absolute; top: 500px; left: 700px; font-size: 150%", :class => 'button3'

@@ -48,6 +48,27 @@ h1 {
   /*width: 100%;*/
   /*border-bottom: 1px solid DarkSlateGrey;*/
 }
+
+h2 {
+  color: black;
+  font-size: 150%;
+  font-style: normal;
+  display: block;
+  /*width: 100%;*/
+  /*border-bottom: 1px solid DarkSlateGrey;*/
+}
+
+h3 {
+  color: DarkSlateGrey;
+  font-size: 150%;
+  font-style: normal;
+  display: block;
+  position: relative;
+  top: 100px;
+  /*width: 100%;*/
+  /*border-bottom: 1px solid DarkSlateGrey;*/
+}
+
 .title {
   /*margin: 0 0 1em;*/
   /*padding: 10px;*/
@@ -69,7 +90,33 @@ h1 {
   top: 0px;
   /*left: -1350px;*/
   padding: 15px 8px;
-  z-index:1;
+  /*z-index:-1;*/
+}
+
+table {
+    /*border-collapse: collapse;*/
+    width: 100%;
+    position: relative;
+    left: 253px;
+    top: 100px;
+}
+
+th, td {
+    text-align: left;
+    padding: 20px;
+}
+
+td {
+  color: DarkSlateGrey
+}
+
+tr{background-color: #f2f2f2}
+
+th {
+    background-color: DarkSlateGrey;
+    color: white;
+    font-size: 120%;
+    width: 20%;
 }
 
 /*div {*/
@@ -78,6 +125,37 @@ h1 {
 /*    border: 25px solid navy;*/
 /*    margin: 25px;*/
 /*}*/
+
+ul2 {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    width: 20%;
+    background-color: #f1f1f1;
+    height: 100%; /* Full height */
+    position: fixed; /* Make it stick, even on scroll */
+    left: 0px;
+    top: 84px;
+    overflow: auto; /* Enable scrolling if the sidenav has too much content */
+}
+li2 a {
+    display: block;
+    font-size: 150%;
+    text-align: left;
+    color: #000;
+    padding: 20px 0 20px 20px;
+    text-decoration: none;
+}
+
+li2 .active {
+    background-color: #0080ff;
+    color: white;
+}
+
+li2 a:hover:not(.active) {
+    background-color: #0080ff;
+    color: white;
+}
 
 ul {
     list-style-type: none;
@@ -121,9 +199,9 @@ li a:hover {
   font-size: 26px;
   -webkit-transition-duration: 0.4s; /* Safari */
   transition-duration: 0.4s;
-  position: absolute;
+  position: relative;
   top: 380px;
-  left: 580px;
+  /*left: 580px;*/
 }
 .button:hover {
   /*background-color: #1b3690;*/
@@ -145,6 +223,24 @@ li a:hover {
 .button2:hover {
   box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
 }
+
+.button3 {
+  background-color: DarkSlateGrey; 
+  border: none;
+  color: white;
+  padding: 10px 10px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 35px;
+  -webkit-transition-duration: 0.4s; /* Safari */
+  transition-duration: 0.4s;
+}
+.button3:hover {
+  background-color: #0080ff;
+  box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+}
+
 
 table#movies {
   margin: 10px;
