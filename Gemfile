@@ -2,6 +2,8 @@ source 'https://rubygems.org'
 
 ruby '2.2.2'
 
+
+gem 'bcrypt', '3.1.7'
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.2.1'
 # Use SCSS for stylesheets
@@ -52,6 +54,7 @@ end
 group :production do
   gem 'pg' # for Heroku deployment
   gem 'rails_12factor'
+  gem 'puma',           '2.11.1'
 end
 
 

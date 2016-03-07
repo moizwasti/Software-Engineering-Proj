@@ -1,4 +1,7 @@
 Rails.application.routes.draw do
+
+  get 'sessions/new'
+
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
@@ -18,6 +21,11 @@ Rails.application.routes.draw do
   put 'courses/movieupdater'
   get 'courses/delete'
   delete 'courses/deleter'
+  get 'signup'  => 'users#new'
+  get    'login'   => 'sessions#new'
+  post   'login'   => 'sessions#create'
+  delete 'logout'  => 'sessions#destroy'
+  resources :users
   resources :courses
   # Example resource route with options:
   #   resources :products do
