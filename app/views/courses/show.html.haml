@@ -1,6 +1,6 @@
 -# in app/views/courses/show.html.haml
 
-%body{:style => "background-image: url('http://eskipaper.com/images/minimalist-wallpaper-23.jpg'); background-size: 100% auto; position: fixed; right: 0px; left: 0px;"}
+%body{:style => "background-image: url('http://eskipaper.com/images/minimalist-wallpaper-23.jpg'); background-size: 100% auto; position: fixed; right: 5px; left: 25px;"}
   %h3 Details about: #{@course.title}
   %ul2
     - @allcourses.each do |course|
@@ -18,7 +18,11 @@
     %tr
       %th Description:
       %td#description= @course.description
+  %h3 Videos
+  %video{:class => "sleep-video",:controls => "", :width => "400"}
+    %source{:src => "http://techslides.com/demos/sample-videos/small.mp4", :type => "video/mp4"}
+
     
-    = link_to 'Edit', edit_course_path(@course), :style => "position: absolute; top: 500px; left: 500px; font-size: 150%", :class => 'button3'
-    = link_to 'Delete', course_path(@course), :method => :delete, :confirm => 'Are you sure?', :style => "position: absolute; top: 500px; left: 590px; font-size: 150%", :class => 'button3'
-    = link_to 'Back to course list', courses_path, :style => "position: absolute; top: 500px; left: 700px; font-size: 150%", :class => 'button3'
+    // = link_to 'Edit', edit_course_path(@course), :style => "position: absolute; top: 500px; left: 500px; font-size: 150%", :class => 'button3'
+    // = link_to 'Delete', course_path(@course), :method => :delete, :confirm => 'Are you sure?', :style => "position: absolute; top: 500px; left: 590px; font-size: 150%", :class => 'button3'
+    // = link_to 'Back to course list', courses_path, :style => "position: absolute; top: 500px; left: 700px; font-size: 150%", :class => 'button3'

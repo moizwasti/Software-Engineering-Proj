@@ -1,3 +1,5 @@
 %html
     %body
-        %b= link_to 'Get Started', courses_tabs_path, class: "button"
+        -if logged_in?
+        - else
+            %b= link_to 'Get Started', login_path, class: "button"

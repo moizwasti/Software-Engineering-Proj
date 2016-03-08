@@ -43,6 +43,7 @@ html {
   font-size: 10pt;
   text-align: center;
   z-index:-1;
+  // overflow-y:scroll;
 }
 
 body {
@@ -55,6 +56,9 @@ body {
   text-align: center;
   background-image: url("https://yalantis.com/media/content/ckeditor/2014/11/Katy-2.jpg");
   background-size: 100% auto;
+  width: 100%;
+  height: 100%;
+  // overflow-x:scroll;
 }
 
 div#main {
@@ -161,6 +165,22 @@ th {
 /*    border: 25px solid navy;*/
 /*    margin: 25px;*/
 /*}*/
+
+.transbox {
+  margin: 30px;
+  background-color: #ffffff;
+  border: 1px solid black;
+  opacity: 0.9;
+  filter: alpha(opacity=60); /* For IE8 and earlier */
+  z-index: 1;
+}
+
+.transbox p {
+  margin: 5%;
+  font-weight: bold;
+  color: #000000;
+}
+
 
 @mixin box_sizing {
   -moz-box-sizing:    border-box;
@@ -315,6 +335,13 @@ table#movies th, table#movies td {
   margin: 1em 0;
   padding: 4px;
 }
+.sleep-video {
+  left: 0px;
+  top: 100px;
+  position: relative;
+  // width: 100%;
+  // z-index: 1;
+    }
 form label {
   display: block;
   line-height: 25px;

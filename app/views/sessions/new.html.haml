@@ -1,15 +1,17 @@
 - provide(:title, "Log in")
-%h1 Log in
-.row
-  .col-md-6.col-md-offset-3
-    = form_for(:session, url: login_path) do |f|
-      = f.label :email
-      = f.email_field :email, class: 'form-control'
-      = f.label :password
-      = f.password_field :password, class: 'form-control'
-      = f.submit "Log in", class: "button3"
-      = f.label :remember_me, class: "checkbox inline" do
-        = f.check_box :remember_me
-        %span Remember me on this computer
-    %p
-      New user? #{link_to "Sign up now!", signup_path}
+%transbox{:style => "position: relative; top: 150px; width: 5%"}
+  %h1 Log in
+  .row
+    .col-md-6.col-md-offset-3
+      = form_for(:session, url: login_path) do |f|
+        = f.label :email
+        = f.email_field :email, class: 'form-control', style: "width:250px"
+        = f.label :password
+        = f.password_field :password, class: 'form-control', style: "width:250px"
+        %br= f.submit "Log in", class: "button3", style: "width:300px"
+        = f.label :remember_me, class: "checkbox inline" do
+          = f.check_box :remember_me
+          %span Remember me on this computer
+      %p
+        New user? #{link_to "Sign up now!", signup_path}
+        

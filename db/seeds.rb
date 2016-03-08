@@ -6,13 +6,13 @@
 #   cities = City.create([{ name: 'Chicago' }, { name: 'Copenhagen' }])
 #   Mayor.create(name: 'Emanuel', city: cities.first)
 
-courses = [{:title => 'Badnami 101', :rating => '5/5', :instructor => 'Munni'},
-      	  {:title => 'Jawani 101', :rating => '4.5/5', :instructor => 'Sheela'},
-      	  {:title => 'Dumb Ways to Break a Leg', :rating => '1/5', :instructor => 'Zain Butt'},
-      	  {:title => 'Poondi', :rating => '4.9/5', :instructor => 'Haither Ahmad'},
-      	  {:title => 'Pulling Your Beard', :rating => '2.4/5', :instructor => '6-Apr-1968'},
-      	  {:title => 'How to Lose A Friend', :rating => '0.5/5', :instructor => 'Fizzah Amjad'},
-      	  {:title => 'Islam ki Baatain', :rating => '4/5', :instructor => 'Maulana Tulha'}
+courses = [{:title => 'Introduction to Programming', :rating => '4/5', :instructor => 'Zain Butt'},
+      	  {:title => 'Data Structures', :rating => '4.5/5', :instructor => 'Ozair Asim'},
+      	  {:title => 'Discrete Mathematics', :rating => '4.25/5', :instructor => 'Mahnoor Ijaz'},
+      	  {:title => 'Algorithms', :rating => '4/5', :instructor => 'Mujtaba Ali Malik'},
+      	  {:title => 'Computer Graphics', :rating => '4.4/5', :instructor => 'Fnu Tulha'},
+      	  {:title => 'Software Engineering', :rating => '4.5/5', :instructor => 'Fahad Cheema'},
+      	  {:title => 'Computer Networks', :rating => '5/5', :instructor => 'Moiz Imran'}
   	 ]
 
 courses.each do |course|

@@ -17,6 +17,9 @@ class UsersController < ApplicationController
       render 'new'
     end
   end
+  
+  def soon
+  end
 
   private
 
