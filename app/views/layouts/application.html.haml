@@ -35,6 +35,8 @@
         .alert.alert-danger= flash[:warning]
       - elsif flash[:danger]
         .alert.alert-danger= flash[:danger]
+      - else flash[:success]
+        .alert.alert-danger= flash[:success]
 
       = yield
       
