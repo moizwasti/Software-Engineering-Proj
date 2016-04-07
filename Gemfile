@@ -1,6 +1,6 @@
 source 'https://rubygems.org'
 
-ruby '2.2.2'
+ruby '2.3.0'
 
 
 gem 'bcrypt', '3.1.7'
@@ -30,7 +30,11 @@ gem 'sdoc', '~> 0.4.0', group: :doc
 
 # Use Unicorn as the app server
 # gem 'unicorn'
+group :development, :test do
 
+  gem 'cucumber-rails'
+  gem 'database_cleaner'
+end
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
 

@@ -1,4 +1,4 @@
 class ApplicationMailer < ActionMailer::Base
-  default from: "nearpeerorg@gmail.com"
+  default from: "noreply@nearpeer.herokuapp.com/"
   layout 'mailer'
 end
