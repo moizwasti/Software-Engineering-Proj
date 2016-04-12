@@ -20,7 +20,7 @@
           %li= link_to "Log out", logout_path, method: "delete"
           %li=link_to 'ContactUs', users_soon_path
         - else
-          %li= link_to "Log in", login_path
+          %li= link_to "Log in", user_session_path
           %li=link_to 'ContactUs', users_soon_path
     %u1
       - if flash[:notice]
