@@ -1,14 +1,11 @@
 Rails.application.routes.draw do
 
-  # devise_for :users
   get 'password_resets/new'
 
   get 'password_resets/edit'
 
   get 'sessions/new'
 
-  devise_for :users, :controllers => { omniauth_callbacks: 'omniauth_callbacks'}
-  
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
@@ -25,10 +22,10 @@ Rails.application.routes.draw do
   #   resources :products
   get 'courses/tabs'
   get 'users/soon'
-  get 'signup'  => 'devise/registrations#new'
-  get    'login'   => 'devise/sessions#new'
-  post   'login'   => 'devise/sessions#create'
-  delete 'logout'  => 'devise/sessions#destroy'
+  get 'signup'  => 'users#new'
+  get    'login'   => 'sessions#new'
+  post   'login'   => 'sessions#create'
+  delete 'logout'  => 'sessions#destroy'
   resources :users
   resources :courses
   resources :account_activations, only: [:edit]
@@ -72,5 +69,4 @@ Rails.application.routes.draw do
   #     # (app/controllers/admin/products_controller.rb)
   #     resources :products
   #   end
-  match '/users/:id/finish_signup' => 'users#finish_signup', via: [:get, :patch], :as => :finish_signup
 end
